@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <span>Client App</span>
+</mat-toolbar>
+<mat-drawer-container >
+  <mat-drawer #drawer mode="side" opened style="height: 800px">
+    <img src="../assets/imgUsuario.png" alt="Imagen de Usuario" class="img">
+    <mat-divider></mat-divider>
+    <button mat-raised-button routerLink="/home">Clients</button>
+    <mat-divider></mat-divider>
+    <button mat-raised-button routerLink="/defaul">Client Look History</button>
+    <mat-divider></mat-divider>
+    <button mat-raised-button routerLink="/defaul">Emergency PIN Configuration</button>
+    <mat-divider></mat-divider>
+    <button mat-raised-button routerLink="/defaul">Emergency PIN History</button>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-card class="example-card">
+      <router-outlet></router-outlet>
+    </mat-card>
+  </mat-drawer-content>
+</mat-drawer-container>

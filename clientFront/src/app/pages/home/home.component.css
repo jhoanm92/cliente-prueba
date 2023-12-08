@@ -1,0 +1,16 @@
+.mat-raised-button {
+  margin: 20px;
+}
+
+mat-header-cell, mat-cell {
+  justify-content: center;
+}
+
+.mat-table{
+  width: 95%;
+  margin: 0% 1%;
+}
+
+.title_clients {
+  color: #4c45b1;
+}
